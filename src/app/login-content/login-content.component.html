@@ -1,0 +1,32 @@
+<div class="content-container">
+    <div class="content-area">
+        <div class="center">
+            <span class="f-20">
+                Sanket.digio.in uses gmail?<br />
+                login using gmail
+            </span><br>
+            <button class="btn btn-danger">Google</button>
+        </div><br><br>
+
+        <h2><span>OR</span></h2>
+
+        <div class="content-container center">
+            <div class="content-area">
+                <span class="f-20">Proceed with your Email address</span>
+                <form clrForm [formGroup]="form">
+
+                    <div class="clr-form-control center-div">
+                        <clr-input-container class="center-div">
+                            <input clrInput formControlName="email" type="email" />
+                            <clr-control-error *clrIfError="'email'">Email Invalid</clr-control-error>
+                        </clr-input-container>
+                    </div>
+                </form><br><br>
+                <span class="f-18 mt-50">
+                    By Continuing I confirm  to the terms and  Service  and Privacy Policy of Digio.in
+                </span>
+                <button class="btn btn-primary mt-20 center-div" (click)="submit('dashboard')" [disabled]="!form.valid">Continue</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+.center {
+    text-align: center; 
+    margin-bottom: 20px;
+}
+::ng-deep {
+    .clr-input {
+      width: 60%;
+    }
+  }
